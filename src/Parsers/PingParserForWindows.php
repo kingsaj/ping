@@ -35,7 +35,7 @@ final class PingParserForWindows extends PingParser
         } else {
             $this->setRoundTripTime($ping[count($ping) - 1]);
             $this->setSequence();
-            $this->setStatistics($ping[count($ping) - 4]);
+            $this->setStatistics($ping[count($ping) - 3]);
         }
 
         $this->setHostStatus();
